@@ -31,10 +31,10 @@ export function FinalCTASection() {
           <div className="mt-6 inline-flex items-center gap-2 rounded-xl px-6 py-3" style={{ backgroundColor: "rgba(255,255,0,0.1)" }}>
             <Flame className="h-5 w-5 text-secondary" />
             <span className="font-display text-lg font-bold text-white">
-              {"1\u00BA Lote \u2013 "}
+              {"2\u00BA Lote \u2013 "}
             </span>
             <span className="font-display text-2xl font-extrabold" style={{ color: "#ffff00" }}>
-              R$ 30,00
+              R$ 35,00
             </span>
           </div>
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { Flame, Ticket } from "lucide-react"
+import { Flame } from "lucide-react"
 
 export function TopBar() {
   return (
@@ -11,12 +11,7 @@ export function TopBar() {
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-4 px-4 py-2 text-sm sm:gap-6 sm:text-base">
         <span className="flex items-center gap-1.5 font-display font-bold" style={{ color: "#ffff00" }}>
           <Flame className="h-4 w-4" />
-          {"1\u00BA Lote \u2013 R$30"}
-        </span>
-        <span className="hidden h-4 w-px bg-white/20 sm:block" aria-hidden="true" />
-        <span className="flex items-center gap-1.5 text-white/80">
-          <Ticket className="h-4 w-4" style={{ color: "#ffff00" }} />
-          {"50 primeiras credenciais exclusivas"}
+          {"2\u00BA Lote | \u00DAltimas 20 credenciais dispon\u00EDveis"}
         </span>
       </div>
     </div>
