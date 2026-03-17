@@ -82,11 +82,11 @@ export function HeroSection() {
           >
             <Flame className="h-6 w-6 shrink-0 text-black" />
             <span className="font-display text-lg font-extrabold whitespace-nowrap text-black sm:text-xl">
-              {"2\u00BA LOTE"}
+              {"3\u00BA LOTE"}
             </span>
             <span className="mx-1 h-7 w-px shrink-0 bg-black/30" aria-hidden="true" />
             <span className="font-display text-3xl font-extrabold whitespace-nowrap text-black sm:text-4xl">
-              R$ 35,00
+              R$ 40,00
             </span>
           </div>
 
