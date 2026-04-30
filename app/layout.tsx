@@ -14,9 +14,9 @@ const _inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Jogadinha Nerd - 1 Ano Konoha | 21 de Março de 2026',
+  title: 'Jogadinha Nerd - Edição Orgulho Nerd | 23 de Maio de 2026',
   description:
-    'A maior edição da Jogadinha Nerd! Jogos de tabuleiro, RPG, Magic, Pokémon e muito mais. 21/03/2026 na UNEMAT. Garanta seu ingresso!',
+    'A experiência nerd com jogos de tabuleiro mais insana de Rondonópolis! RPG, Yu-Gi-Oh!, Pokémon, Board Games e muito mais. 23/05/2026 na UNEMAT. Garanta seu ingresso!',
 }
 
 export const viewport: Viewport = {
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="bg-[#0a1a4a]">
       <body className={`${_spaceGrotesk.variable} ${_inter.variable} font-sans antialiased`}>
         <Script
           id="facebook-pixel"

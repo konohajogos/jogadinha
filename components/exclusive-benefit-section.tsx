@@ -1,38 +1,45 @@
 import Image from "next/image"
-import { BadgeCheck, Gift, AlertTriangle, Clock, CheckCircle2 } from "lucide-react"
+import { BadgeCheck, Gift, AlertTriangle, Sparkles } from "lucide-react"
 
 export function ExclusiveBenefitSection() {
   return (
     <section
       className="px-4 py-20 sm:py-28"
-      style={{ background: "linear-gradient(180deg, #000000, #0113b2)" }}
+      style={{ background: "linear-gradient(180deg, #0c1476, #0a1a4a)" }}
     >
-      <div className="mx-auto max-w-5xl">
-        <div className="mb-10 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5" style={{ backgroundColor: "rgba(255,255,0,0.15)" }}>
-            <AlertTriangle className="h-4 w-4" style={{ color: "#ffff00" }} />
-            <span className="font-display text-sm font-bold uppercase tracking-wider" style={{ color: "#ffff00" }}>
-              Credenciais Limitadas
-            </span>
-          </div>
-          <h2 className="text-balance font-display text-3xl font-bold text-white sm:text-4xl">
-            Garanta sua{" "}
-            <span style={{ color: "#ffff00" }}>credencial personalizada + brinde</span>
-          </h2>
-        </div>
+      <div className="mx-auto max-w-3xl">
+        <div className="relative overflow-hidden rounded-2xl border border-[#ffff00]/30 bg-[#ffff00]/5 p-8 sm:p-12">
+          {/* Background glow */}
+          <div
+            className="pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full opacity-30"
+            style={{
+              background:
+                "radial-gradient(circle, hsl(60 100% 50% / 0.6), transparent 70%)",
+            }}
+            aria-hidden="true"
+          />
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {/* Batch 1 - Sold Out */}
-          <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/5 p-6 opacity-60">
-            <div className="absolute top-0 right-0 rounded-bl-xl bg-red-500/80 px-3 py-1">
-              <span className="text-xs font-bold text-white">ESGOTADO</span>
+          <div className="relative z-10 flex flex-col items-center text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5" style={{ backgroundColor: "rgba(255,255,0,0.15)" }}>
+              <AlertTriangle className="h-4 w-4" style={{ color: "#ffff00" }} />
+              <span className="font-display text-sm font-bold uppercase tracking-wider" style={{ color: "#ffff00" }}>
+                Vagas limitadas
+              </span>
             </div>
-            <div className="mb-4 flex items-center gap-2">
-              <Clock className="h-4 w-4 text-white/60" />
-              <span className="text-sm text-white/60">Até 07/03</span>
-            </div>
-            <div className="mb-4">
-              <span className="font-display text-2xl font-bold text-white">R$ 30</span>
+
+            <h2 className="text-balance font-display text-3xl font-bold text-white sm:text-4xl">
+              {"Beneficio para os "}
+              <span style={{ color: "#ffff00" }}>50 primeiros</span>
+            </h2>
+
+            {/* Credential image */}
+            <div className="relative my-8 h-64 w-64 sm:h-80 sm:w-80">
+              <Image
+                src="/images/cordao-broche.png"
+                alt="Cordão e broche exclusivo Konoha Jogos - Jogadinha Nerd"
+                fill
+                className="object-contain drop-shadow-2xl"
+              />
             </div>
             <div className="space-y-3">
               <div className="flex items-start gap-2">
@@ -46,57 +53,25 @@ export function ExclusiveBenefitSection() {
             </div>
           </div>
 
-          {/* Batch 2 - Sold Out */}
-          <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/5 p-6 opacity-60">
-            <div className="absolute top-0 right-0 rounded-bl-xl bg-red-500/80 px-3 py-1">
-              <span className="text-xs font-bold text-white">ESGOTADO</span>
-            </div>
-            <div className="mb-4 flex items-center gap-2">
-              <Clock className="h-4 w-4 text-white/60" />
-              <span className="text-sm text-white/60">Até 14/03</span>
-            </div>
-            <div className="mb-4">
-              <span className="font-display text-2xl font-bold text-white">R$ 35</span>
-            </div>
-            <div className="space-y-3">
-              <div className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 h-4 w-4 text-green-400" />
-                <span className="text-sm text-white/80">Credenciais exclusivas</span>
+            <div className="w-full space-y-4">
+              <div className="flex items-start gap-3 rounded-lg border border-[#ffff00]/20 bg-[#ffff00]/10 p-4 text-left">
+                <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0" style={{ color: "#ffff00" }} />
+                <span className="text-base font-medium text-white">
+                  {"Credencial personalizada exclusiva da edi\u00E7\u00E3o Orgulho Nerd"}
+                </span>
               </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 h-4 w-4 text-green-400" />
-                <span className="text-sm text-white/80">Brinde especial</span>
+              <div className="flex items-start gap-3 rounded-lg border border-[#25D366]/20 bg-[#25D366]/10 p-4 text-left">
+                <Gift className="mt-0.5 h-5 w-5 shrink-0" style={{ color: "#25D366" }} />
+                <span className="text-base font-medium text-white">
+                  Brinde especial entregue na entrada
+                </span>
               </div>
             </div>
           </div>
 
-         
-          {/* Batch 3 - Future / Disabled */}
-          <div className="relative overflow-hidden rounded-2xl border-2 bg-white/10 p-6" style={{ borderColor: "#ffff00", boxShadow: "0 0 30px rgba(255,255,0,0.2)" }}>
-            <div className="absolute top-0 right-0 rounded-bl-xl" style={{ backgroundColor: "#ffff00" }}>
-              <span className="px-3 py-1 text-xs font-bold text-black">ATUAL</span>
-            </div>
-            <div className="mb-4 flex items-center gap-2">
-              <Clock className="h-4 w-4" style={{ color: "#ffff00" }} />
-              <span className="text-sm font-medium text-white">Até 21/03</span>
-            </div>
-            <div className="mb-4">
-              <span className="font-display text-3xl font-bold" style={{ color: "#ffff00" }}>R$ 40</span>
-            </div>
-            <div className="mb-4 rounded-lg bg-white/10 p-3">
-              <p className="text-xs text-white/70">
-                Últimas 10 credenciais
-              </p>
-            </div>
-            <div className="space-y-3">
-              <div className="flex items-start gap-2">
-                <BadgeCheck className="mt-0.5 h-4 w-4" style={{ color: "#ffff00" }} />
-                <span className="text-sm font-medium text-white">Credenciais</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <Gift className="mt-0.5 h-4 w-4" style={{ color: "#25D366" }} />
-                <span className="text-sm font-medium text-white">Brinde especial</span>
-              </div>
+            <div className="mt-8 flex items-center gap-2 text-sm text-white/70">
+              <Sparkles className="h-4 w-4" style={{ color: "#ffff00" }} />
+              <span>Garanta seu ingresso antes que os 50 primeiros acabem!</span>
             </div>
           </div>
 

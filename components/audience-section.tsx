@@ -2,7 +2,7 @@ import { Check } from "lucide-react"
 
 const audiences = [
   "Para quem ama jogos de tabuleiro",
-  "Para quem quer aprender Magic",
+  "Para quem joga Yu-Gi-Oh!",
   "Para colecionadores de Pokémon",
   "Para fãs de RPG",
   "Para quem quer conhecer pessoas com os mesmos interesses",

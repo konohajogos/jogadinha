@@ -3,6 +3,7 @@ import { CountdownBar } from "@/components/countdown-bar"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { ActivitiesSection } from "@/components/activities-section"
+import { CosplaySection } from "@/components/cosplay-section"
 import { ExclusiveBenefitSection } from "@/components/exclusive-benefit-section"
 import { AudienceSection } from "@/components/audience-section"
 import { GallerySection } from "@/components/gallery-section"
@@ -20,6 +21,7 @@ export default function Page() {
         <HeroSection />
         <AboutSection />
         <ActivitiesSection />
+        <CosplaySection />
         <ExclusiveBenefitSection />
         <AudienceSection />
         <GallerySection />

@@ -95,3 +95,15 @@ export function PokemonIcon({ className }: { className?: string }) {
     </svg>
   )
 }
+
+export function YuGiOhIcon({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className={className}>
+      {/* Millennium Eye inspired icon */}
+      <rect x="3" y="2" width="18" height="20" rx="2" />
+      <path d="M12 7 L16 12 L12 17 L8 12 Z" fill="currentColor" fillOpacity="0.2" />
+      <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none" />
+      <path d="M6 12 Q12 6 18 12 Q12 18 6 12" fill="none" />
+    </svg>
+  )
+}
