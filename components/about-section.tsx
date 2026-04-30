@@ -21,19 +21,19 @@ export function AboutSection() {
 
         <div className="mt-8 space-y-6 text-lg leading-relaxed text-white/70">
           <p>
-            A Jogadinha Nerd e um evento presencial dedicado aos apaixonados por jogos de tabuleiro, RPG e cultura geek.
+            {"A Jogadinha Nerd \u00E9 um evento presencial dedicado aos apaixonados por jogos de tabuleiro, RPG e cultura geek."}
           </p>
           <p>
             {"Nesta "}
             <span className="font-bold" style={{ color: "#ffff00" }}>SEGUNDA</span>
-            {" edicao, estamos preparando a experiencia com um toque a mais de nerd pela Konoha."}
+            {" edi\u00E7\u00E3o, estamos preparando a experi\u00EAncia com um toque a mais de nerd pela Konoha."}
           </p>
           <div className="mx-auto max-w-lg rounded-xl border border-[#ffff00]/30 bg-[#ffff00]/10 p-6">
             <p className="font-display text-base italic text-white sm:text-lg">
-              Se voce ja viveu uma Jogadinha, sabe.
+              {"Se voc\u00EA j\u00E1 viveu uma Jogadinha, sabe."}
             </p>
             <p className="mt-2 font-display text-base font-bold sm:text-lg" style={{ color: "#ffff00" }}>
-              Se nunca viveu, essa e a edicao perfeita para comecar.
+              {"Se nunca viveu, essa \u00E9 a edi\u00E7\u00E3o perfeita para come\u00E7ar."}
             </p>
           </div>
         </div>

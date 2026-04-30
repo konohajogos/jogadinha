@@ -19,7 +19,7 @@ export function FinalCTASection() {
       <div className="relative z-10 mx-auto max-w-3xl">
         <div className="overflow-hidden rounded-2xl border border-[#ffff00]/30 bg-[#0a1a4a]/80 p-8 text-center sm:p-12 backdrop-blur-sm">
           <h2 className="text-balance font-display text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
-            Se voce gosta de ser nerd ou de jogos, voce precisa estar aqui.
+            {"Se voc\u00EA gosta de ser nerd ou de jogos, voc\u00EA precisa estar aqui."}
           </h2>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

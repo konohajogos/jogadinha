@@ -30,14 +30,14 @@ const activities: Activity[] = [
   {
     icon: YuGiOhIcon,
     title: "Torneio de Yu-Gi-Oh!",
-    description: "Prepara seu deck e vem competir em mesa",
+    description: "Prepare seu deck e venha competir em mesa",
     color: "text-[#0097FF]",
     borderColor: "border-[#0097FF]/30",
     bgColor: "bg-[#0097FF]/10",
   },
   {
     icon: Gamepad2,
-    title: "Missoes e Dinamicas",
+    title: "Missões e Dinâmicas",
     description: "Desafios do universo Nerd",
     color: "text-[#25D366]",
     borderColor: "border-[#25D366]/30",
@@ -45,8 +45,8 @@ const activities: Activity[] = [
   },
   {
     icon: PokemonIcon,
-    title: "Troca de Cartas Pokemon",
-    description: "Espaco dedicado para troca e interacao",
+    title: "Troca de Cartas Pokémon",
+    description: "Espaço dedicado para troca e interação",
     color: "text-[#ffff00]",
     borderColor: "border-[#ffff00]/30",
     bgColor: "bg-[#ffff00]/10",
@@ -54,15 +54,15 @@ const activities: Activity[] = [
   {
     icon: Trophy,
     title: "Torneio de Board Games",
-    description: "Competicoes com premiacao",
+    description: "Competições com premiação",
     color: "text-[#0097FF]",
     borderColor: "border-[#0097FF]/30",
     bgColor: "bg-[#0097FF]/10",
   },
   {
     icon: Crown,
-    title: "Campeonato dos Campeoes",
-    description: "Campeoes das mesas se enfrentam",
+    title: "Campeonato dos Campeões",
+    description: "Campeões das mesas se enfrentam",
     color: "text-[#25D366]",
     borderColor: "border-[#25D366]/30",
     bgColor: "bg-[#25D366]/10",
@@ -70,7 +70,7 @@ const activities: Activity[] = [
   {
     icon: Gift,
     title: "Sorteios",
-    description: "Premios durante todo o evento",
+    description: "Prêmios durante todo o evento",
     color: "text-[#ffff00]",
     borderColor: "border-[#ffff00]/30",
     bgColor: "bg-[#ffff00]/10",
@@ -78,7 +78,7 @@ const activities: Activity[] = [
   {
     icon: Handshake,
     title: "Parceiros Especiais",
-    description: "Participacao de parceiros convidados",
+    description: "Participação de parceiros convidados",
     color: "text-[#0097FF]",
     borderColor: "border-[#0097FF]/30",
     bgColor: "bg-[#0097FF]/10",
@@ -94,10 +94,10 @@ export function ActivitiesSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <span className="font-display text-sm font-semibold uppercase tracking-widest" style={{ color: "#ffff00" }}>
-            Programacao
+            {"Programa\u00E7\u00E3o"}
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            O que voce vai encontrar
+            {"O que voc\u00EA vai encontrar"}
           </h2>
         </div>
 

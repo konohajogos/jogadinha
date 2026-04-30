@@ -28,7 +28,7 @@ export function CosplaySection() {
           <div className="relative z-10 flex flex-col items-center gap-4">
             <Sparkles className="h-10 w-10 text-[#ffff00]" />
             <h2 className="font-display text-3xl font-extrabold uppercase tracking-wide sm:text-4xl lg:text-5xl" style={{ color: "#ffff00" }}>
-              Cosplay e bem-vindo!
+              {"Cosplay \u00E9 bem-vindo!"}
             </h2>
             <p className="max-w-md text-lg text-white/80">
               Vista-se do seu personagem favorito e venha brilhar no evento

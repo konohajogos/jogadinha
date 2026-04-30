@@ -14,9 +14,9 @@ const _inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Jogadinha Nerd - Edicao Orgulho Nerd | 23 de Maio de 2026',
+  title: 'Jogadinha Nerd - Edição Orgulho Nerd | 23 de Maio de 2026',
   description:
-    'A experiencia nerd com jogos de tabuleiro mais insana de Rondonopolis! RPG, Yu-Gi-Oh!, Pokemon, Board Games e muito mais. 23/05/2026 na UNEMAT. Garanta seu ingresso!',
+    'A experiência nerd com jogos de tabuleiro mais insana de Rondonópolis! RPG, Yu-Gi-Oh!, Pokémon, Board Games e muito mais. 23/05/2026 na UNEMAT. Garanta seu ingresso!',
 }
 
 export const viewport: Viewport = {

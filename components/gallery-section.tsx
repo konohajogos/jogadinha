@@ -6,12 +6,12 @@ const galleryPhotos = [
   { src: "/images/gallery/foto-02.jpg", alt: "Grupo de amigos jogando cartas em evento" },
   { src: "/images/gallery/foto-03.jpg", alt: "Turma reunida jogando Barking Kittens e outros jogos" },
   { src: "/images/gallery/foto-04.jpg", alt: "Partida do jogo de tabuleiro Perfil 7" },
-  { src: "/images/gallery/foto-05.jpg", alt: "Miniatura 3D impressa como premio de torneio" },
-  { src: "/images/gallery/foto-06.jpg", alt: "Amigos jogando jogo de cartas com mascaras divertidas" },
+  { src: "/images/gallery/foto-05.jpg", alt: "Miniatura 3D impressa como prêmio de torneio" },
+  { src: "/images/gallery/foto-06.jpg", alt: "Amigos jogando jogo de cartas com máscaras divertidas" },
   { src: "/images/gallery/foto-07.jpg", alt: "Galera se divertindo jogando cartas na Jogadinha" },
-  { src: "/images/gallery/foto-08.jpg", alt: "Ganhador exibindo premio e trofeu 3D do evento" },
-  { src: "/images/gallery/foto-09.jpg", alt: "Ganhadora do jogo Tapple exibindo seu premio" },
-  { src: "/images/gallery/foto-10.jpg", alt: "Encerramento jogadinha de natal" },
+  { src: "/images/gallery/foto-08.jpg", alt: "Ganhador exibindo prêmio e troféu 3D do evento" },
+  { src: "/images/gallery/foto-09.jpg", alt: "Ganhadora do jogo Tapple exibindo seu prêmio" },
+  { src: "/images/gallery/foto-10.jpg", alt: "Encerramento Jogadinha de Natal" },
 ]
 
 export function GallerySection() {
@@ -29,7 +29,7 @@ export function GallerySection() {
             </span>
           </div>
           <h2 className="text-balance font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Veja como foram as ultimas edicoes
+            {"Veja como foram as \u00FAltimas edi\u00E7\u00F5es"}
           </h2>
         </div>
 

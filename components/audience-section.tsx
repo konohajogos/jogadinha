@@ -3,10 +3,10 @@ import { Check } from "lucide-react"
 const audiences = [
   "Para quem ama jogos de tabuleiro",
   "Para quem joga Yu-Gi-Oh!",
-  "Para colecionadores de Pokemon",
-  "Para fas de RPG",
+  "Para colecionadores de Pokémon",
+  "Para fãs de RPG",
   "Para quem quer conhecer pessoas com os mesmos interesses",
-  "Para quem quer viver um sabado diferente",
+  "Para quem quer viver um sábado diferente",
 ]
 
 export function AudienceSection() {
@@ -18,10 +18,10 @@ export function AudienceSection() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-12 text-center">
           <span className="font-display text-sm font-semibold uppercase tracking-widest" style={{ color: "#ffff00" }}>
-            Publico
+            {"P\u00FAblico"}
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            Para quem e o evento
+            {"Para quem \u00E9 o evento"}
           </h2>
         </div>
 

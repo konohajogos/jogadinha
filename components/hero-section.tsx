@@ -40,12 +40,12 @@ export function HeroSection() {
 
           {/* Title */}
           <h1 className="text-balance font-display text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
-            A EXPERIENCIA NERD COM JOGOS DE TABULEIRO MAIS INSANA DE RONDONOPOLIS
+            {"A EXPERI\u00CANCIA NERD COM JOGOS DE TABULEIRO MAIS INSANA DE RONDON\u00D3POLIS"}
           </h1>
 
           {/* Subtitle */}
           <p className="max-w-lg text-pretty text-lg leading-relaxed text-white/80 sm:text-xl">
-            Um dia inteiro de jogos de tabuleiro, desafios, amigos e muita diversao
+            {"Um dia inteiro de jogos de tabuleiro, desafios, amigos e muita divers\u00E3o"}
           </p>
 
           {/* Event info */}
@@ -98,7 +98,7 @@ export function HeroSection() {
           <div className="relative w-72 sm:w-80 lg:w-[500px]">
             <Image
               src="/images/logo-orgulho-nerd.png"
-              alt="Jogadinha Nerd - Edicao Orgulho Nerd"
+              alt="Jogadinha Nerd - Edição Orgulho Nerd"
               width={500}
               height={300}
               className="w-full drop-shadow-2xl"
