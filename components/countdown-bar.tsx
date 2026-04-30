@@ -1,18 +1,30 @@
 "use client"
 
+import Image from "next/image"
 import { CountdownTimer } from "./countdown-timer"
 
 export function CountdownBar() {
   return (
     <section
-      className="relative z-40 flex flex-col items-center justify-center gap-3 px-4 py-8 sm:py-10"
-      style={{ backgroundColor: "#0a1a4a" }}
+      className="relative z-40 flex flex-col items-center justify-center gap-3 px-4 py-8 mt-20 sm:py-10"
+      style={{ backgroundColor: "transparent" }}
     >
+      {/* Background image extending from hero */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/background-nerd.png"
+          alt=""
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a4a]/40 to-[#0a1a4a]/90" />
+      </div>
+      
       <span
         className="font-display text-xs font-bold uppercase tracking-[0.25em] sm:text-sm"
         style={{ color: "#ffff00" }}
       >
-        O evento comeca em
+        {"O evento come\u00E7a em"}
       </span>
       <CountdownTimer />
     </section>

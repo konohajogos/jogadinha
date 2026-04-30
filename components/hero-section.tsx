@@ -70,16 +70,21 @@ export function HeroSection() {
 
           {/* 1st Lot Yellow Banner */}
           <div
-            className="flex w-full items-center justify-center gap-4 rounded-xl px-6 py-4 sm:px-8 sm:py-5"
+            className="flex w-full flex-col items-center justify-center gap-2 rounded-xl px-6 py-4 sm:px-8 sm:py-5"
             style={{ backgroundColor: "#ffff00" }}
           >
-            <Flame className="h-7 w-7 shrink-0 text-black" />
-            <span className="font-display text-xl font-extrabold whitespace-nowrap text-black sm:text-2xl">
-              {"1\u00BA LOTE"}
-            </span>
-            <span className="mx-1 h-8 w-px shrink-0 bg-black/30" aria-hidden="true" />
-            <span className="font-display text-4xl font-extrabold whitespace-nowrap text-black sm:text-5xl">
-              R$ 35,00
+            <div className="flex items-center justify-center gap-4">
+              <Flame className="h-7 w-7 shrink-0 text-black" />
+              <span className="font-display text-xl font-extrabold whitespace-nowrap text-black sm:text-2xl">
+                {"1\u00BA LOTE"}
+              </span>
+              <span className="mx-1 h-8 w-px shrink-0 bg-black/30" aria-hidden="true" />
+              <span className="font-display text-4xl font-extrabold whitespace-nowrap text-black sm:text-5xl">
+                R$ 35,00
+              </span>
+            </div>
+            <span className="text-sm font-semibold text-black/70">
+              {"At\u00E9 08/05/26"}
             </span>
           </div>
 
@@ -92,28 +97,16 @@ export function HeroSection() {
           <CTAButtons />
         </div>
 
-        {/* Logo and Ninja images */}
-        <div className="flex flex-col items-center justify-center gap-4 lg:justify-center">
-          {/* Logo */}
-          <div className="relative w-72 sm:w-80 lg:w-[500px]">
+        {/* Logo and Ninja combined image */}
+        <div className="flex flex-col items-center justify-center lg:justify-center">
+          <div className="relative w-72 sm:w-80 lg:w-[450px]">
             <Image
-              src="/images/logo-orgulho-nerd.png"
+              src="/images/logo-ninja-combined.png"
               alt="Jogadinha Nerd - Edição Orgulho Nerd"
-              width={500}
-              height={300}
+              width={450}
+              height={600}
               className="w-full drop-shadow-2xl"
               priority
-            />
-          </div>
-          
-          {/* Ninja mascot */}
-          <div className="relative w-40 sm:w-48 lg:w-56">
-            <Image
-              src="/images/ninja-mascot.png"
-              alt="Mascote Ninja Konoha Jogos"
-              width={224}
-              height={224}
-              className="w-full drop-shadow-2xl"
             />
           </div>
         </div>
