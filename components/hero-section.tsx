@@ -6,9 +6,9 @@ import { CTAButtons } from "./cta-buttons"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden px-4 py-16 sm:py-20">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative overflow-hidden px-4 pt-16 pb-8 sm:pt-20 sm:pb-10">
+      {/* Background image - extends to cover countdown section below */}
+      <div className="absolute inset-0 z-0" style={{ bottom: "-200px" }}>
         <Image
           src="/images/background-nerd.png"
           alt=""
@@ -16,7 +16,7 @@ export function HeroSection() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a4a]/60 via-transparent to-[#0a1a4a]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1a4a]/60 via-transparent to-[#0a1a4a]" />
       </div>
 
       {/* Radial glow */}
