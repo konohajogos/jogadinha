@@ -5,14 +5,14 @@ import { CountdownTimer } from "./countdown-timer"
 export function CountdownBar() {
   return (
     <section
-      className="relative z-40 flex flex-col items-center justify-center gap-2 px-4 py-6 sm:py-8 top-10"
-      style={{ backgroundColor: "#0c1476" }}
+      className="relative z-40 flex flex-col items-center justify-center gap-3 px-4 py-8 sm:py-10"
+      style={{ backgroundColor: "#0a1a4a" }}
     >
       <span
-        className="font-display text-xs font-semibold uppercase tracking-[0.2em] sm:text-sm"
+        className="font-display text-xs font-bold uppercase tracking-[0.25em] sm:text-sm"
         style={{ color: "#ffff00" }}
       >
-        {"O evento come\u00E7a em"}
+        O evento comeca em
       </span>
       <CountdownTimer />
     </section>

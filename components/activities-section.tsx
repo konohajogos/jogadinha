@@ -4,9 +4,10 @@ import {
   Crown,
   Gift,
   Handshake,
+  Gamepad2,
   type LucideIcon,
 } from "lucide-react"
-import { MagicCardIcon, PokemonIcon } from "./game-icons"
+import { PokemonIcon, YuGiOhIcon } from "./game-icons"
 
 interface Activity {
   icon: LucideIcon | React.FC<{ className?: string }>
@@ -27,52 +28,60 @@ const activities: Activity[] = [
     bgColor: "bg-[#ffff00]/10",
   },
   {
-    icon: MagicCardIcon,
-    title: "Inicia\u00E7\u00E3o ao Magic",
-    description: "Aprenda a jogar do zero",
+    icon: YuGiOhIcon,
+    title: "Torneio de Yu-Gi-Oh!",
+    description: "Prepara seu deck e vem competir em mesa",
     color: "text-[#0097FF]",
     borderColor: "border-[#0097FF]/30",
     bgColor: "bg-[#0097FF]/10",
   },
   {
-    icon: PokemonIcon,
-    title: "Troca de Cartas Pok\u00E9mon",
-    description: "Espa\u00E7o dedicado para troca e intera\u00E7\u00E3o",
+    icon: Gamepad2,
+    title: "Missoes e Dinamicas",
+    description: "Desafios do universo Nerd",
     color: "text-[#25D366]",
     borderColor: "border-[#25D366]/30",
     bgColor: "bg-[#25D366]/10",
   },
   {
-    icon: Trophy,
-    title: "Torneios de Board Games",
-    description: "Competi\u00E7\u00F5es com premia\u00E7\u00E3o",
+    icon: PokemonIcon,
+    title: "Troca de Cartas Pokemon",
+    description: "Espaco dedicado para troca e interacao",
     color: "text-[#ffff00]",
     borderColor: "border-[#ffff00]/30",
     bgColor: "bg-[#ffff00]/10",
   },
   {
-    icon: Crown,
-    title: "Campeonato de Carcassonne",
-    description: "Apenas campe\u00F5es anteriores",
+    icon: Trophy,
+    title: "Torneio de Board Games",
+    description: "Competicoes com premiacao",
     color: "text-[#0097FF]",
     borderColor: "border-[#0097FF]/30",
     bgColor: "bg-[#0097FF]/10",
+  },
+  {
+    icon: Crown,
+    title: "Campeonato dos Campeoes",
+    description: "Campeoes das mesas se enfrentam",
+    color: "text-[#25D366]",
+    borderColor: "border-[#25D366]/30",
+    bgColor: "bg-[#25D366]/10",
   },
   {
     icon: Gift,
     title: "Sorteios",
-    description: "Pr\u00EAmios durante todo o evento",
-    color: "text-[#25D366]",
-    borderColor: "border-[#25D366]/30",
-    bgColor: "bg-[#25D366]/10",
+    description: "Premios durante todo o evento",
+    color: "text-[#ffff00]",
+    borderColor: "border-[#ffff00]/30",
+    bgColor: "bg-[#ffff00]/10",
   },
   {
     icon: Handshake,
     title: "Parceiros Especiais",
-    description: "Participa\u00E7\u00E3o de parceiros convidados",
-    color: "text-[#ffff00]",
-    borderColor: "border-[#ffff00]/30",
-    bgColor: "bg-[#ffff00]/10",
+    description: "Participacao de parceiros convidados",
+    color: "text-[#0097FF]",
+    borderColor: "border-[#0097FF]/30",
+    bgColor: "bg-[#0097FF]/10",
   },
 ]
 
@@ -85,10 +94,10 @@ export function ActivitiesSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <span className="font-display text-sm font-semibold uppercase tracking-widest" style={{ color: "#ffff00" }}>
-            {"Programa\u00E7\u00E3o"}
+            Programacao
           </span>
           <h2 className="mt-3 text-balance font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            {"O que voc\u00EA vai encontrar"}
+            O que voce vai encontrar
           </h2>
         </div>
 
