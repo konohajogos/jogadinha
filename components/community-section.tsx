@@ -3,11 +3,17 @@ import { MeepleIcon } from "./game-icons"
 
 export function CommunitySection() {
   return (
-    <section
-      className="relative px-4 py-20 sm:py-28"
-      style={{ background: "linear-gradient(180deg, #0c1476, #0a1a4a)" }}
-    >
-      <div className="mx-auto max-w-4xl">
+    <section className="relative overflow-hidden px-4 py-20 sm:py-28">
+      <Image
+        src="/images/community-background.jpeg"
+        alt=""
+        fill
+        className="object-cover"
+        sizes="100vw"
+        aria-hidden="true"
+      />
+
+      <div className="relative z-10 mx-auto max-w-4xl">
         <div className="text-center">
           <MeepleIcon className="mx-auto mb-6 h-12 w-12 text-[#ffff00]/50" />
 
