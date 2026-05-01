@@ -2,16 +2,22 @@ import Image from "next/image"
 import { Camera } from "lucide-react"
 
 const galleryPhotos = [
-  { src: "/images/gallery/foto-01.jpg", alt: "Jogadores disputando uma partida de Catan" },
-  { src: "/images/gallery/foto-02.jpg", alt: "Grupo de amigos jogando cartas em evento" },
-  { src: "/images/gallery/foto-03.jpg", alt: "Turma reunida jogando Barking Kittens e outros jogos" },
-  { src: "/images/gallery/foto-04.jpg", alt: "Partida do jogo de tabuleiro Perfil 7" },
-  { src: "/images/gallery/foto-05.jpg", alt: "Miniatura 3D impressa como prêmio de torneio" },
-  { src: "/images/gallery/foto-06.jpg", alt: "Amigos jogando jogo de cartas com máscaras divertidas" },
-  { src: "/images/gallery/foto-07.jpg", alt: "Galera se divertindo jogando cartas na Jogadinha" },
-  { src: "/images/gallery/foto-08.jpg", alt: "Ganhador exibindo prêmio e troféu 3D do evento" },
-  { src: "/images/gallery/foto-09.jpg", alt: "Ganhadora do jogo Tapple exibindo seu prêmio" },
-  { src: "/images/gallery/foto-10.jpg", alt: "Encerramento Jogadinha de Natal" },
+  { src: "/images/gallery/01.jpg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/02.png", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/03.png", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/04.png", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/05.png", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/06.jpeg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/07.png", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/08.png", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/09.png", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/15.jpg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/11.jpg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/12.jpg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/13.jpg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/14.jpg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+  { src: "/images/gallery/16.jpeg", alt: "Jogadinha Nerd Ed. 1 Ano" },
+
 ]
 
 export function GallerySection() {

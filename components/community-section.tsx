@@ -35,8 +35,8 @@ export function CommunitySection() {
               <Image
                 src="/images/ninja-mascot.png"
                 alt="Mascote Ninja Konoha"
-                width={160}
-                height={160}
+                width={320}
+                height={320}
                 className="w-full drop-shadow-xl"
               />
             </div>

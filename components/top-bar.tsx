@@ -1,6 +1,6 @@
 "use client"
 
-import { Flame } from "lucide-react"
+import { Flame, Ticket } from "lucide-react"
 
 export function TopBar() {
   return (

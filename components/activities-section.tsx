@@ -61,8 +61,8 @@ const activities: Activity[] = [
   },
   {
     icon: Crown,
-    title: "Campeonato dos Campeões",
-    description: "Campeões das mesas se enfrentam",
+    title: "Torneio dos Campeões",
+    description: "Campeões das mesas se enfrentam em uma rodada final",
     color: "text-[#25D366]",
     borderColor: "border-[#25D366]/30",
     bgColor: "bg-[#25D366]/10",

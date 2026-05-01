@@ -34,25 +34,27 @@ export function CosplaySection() {
             fill="currentColor"
           />
 
-          <div className="relative z-10 flex flex-col items-center gap-6">
-            {/* Ninja image */}
-            <div className="relative w-40 sm:w-48 lg:w-56">
-              <Image
-                src="/images/ninja-cosplay.png"
-                alt="Mascote Ninja - Cosplay"
-                width={224}
-                height={280}
-                className="w-full drop-shadow-2xl"
-              />
+          <div className="relative z-10 flex flex-row items-center gap-24 sm:gap-24">
+            <div className="flex flex-col items-center justify-center gap-3">
+              {/* <Sparkles className="h-10 w-10 text-[#ffff00]" /> */}
+              <h2 className="font-display text-3xl font-extrabold uppercase tracking-wide sm:text-4xl lg:text-5xl" style={{ color: "#ffff00" }}>
+                {"Cosplay \u00E9"}
+                <span className="block whitespace-nowrap">bem-vindo!</span>
+              </h2>
+              <p className="max-w-md text-lg text-white/80">
+                Vista-se do seu personagem favorito e venha brilhar no evento
+              </p>
             </div>
 
-            <Sparkles className="h-10 w-10 text-[#ffff00]" />
-            <h2 className="font-display text-3xl font-extrabold uppercase tracking-wide sm:text-4xl lg:text-5xl" style={{ color: "#ffff00" }}>
-              {"Cosplay \u00E9 bem-vindo!"}
-            </h2>
-            <p className="max-w-md text-lg text-white/80">
-              Vista-se do seu personagem favorito e venha brilhar no evento
-            </p>
+            <div className="relative w-40 sm:w-48 lg:w-56">
+            <Image
+              src="/images/ninja-cosplay.png"
+              alt="Mascote Ninja - Cosplay"
+              width={224}
+              height={280}
+              className="w-full drop-shadow-2xl"
+            />
+            </div>
           </div>
         </div>
       </div>

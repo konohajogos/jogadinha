@@ -5,7 +5,7 @@ import { CountdownTimer } from "./countdown-timer"
 export function CountdownBar() {
   return (
     <section
-      className="relative z-40 flex flex-col items-center justify-center gap-3 px-4 py-8 sm:py-10"
+      className="relative z-40 flex flex-col top-8 items-center justify-center gap-3 px-4 py-8 sm:py-10"
       style={{ backgroundColor: "transparent" }}
     >
       <span
