@@ -8,6 +8,7 @@ import { ExclusiveBenefitSection } from "@/components/exclusive-benefit-section"
 import { AudienceSection } from "@/components/audience-section"
 import { GallerySection } from "@/components/gallery-section"
 import { CommunitySection } from "@/components/community-section"
+import { TicketLotsSection } from "@/components/ticket-lots-section"
 import { FinalCTASection } from "@/components/final-cta-section"
 import { SiteFooter } from "@/components/site-footer"
 import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
@@ -23,6 +24,7 @@ export default function Page() {
         <ActivitiesSection />
         <CosplaySection />
         <ExclusiveBenefitSection />
+        <TicketLotsSection />
         <AudienceSection />
         <GallerySection />
         <CommunitySection />
