@@ -3,18 +3,18 @@ import { AlertTriangle, BadgeCheck, Clock3, Gift } from "lucide-react"
 const ticketLots = [
   {
     name: "1º Lote",
-    status: "Atual",
+    status: "Esgotado",
     until: "até 08/05",
     price: "R$ 35",
-    featured: true,
+    featured: false,
     benefits: ["Credenciais Exclusivas (50 primeiros)", "Brinde de Boas Vindas"],
   },
   {
     name: "2º Lote",
-    status: "Em breve",
+    status: "Atual",
     until: "até 16/05",
     price: "R$ 40",
-    featured: false,
+    featured: true,
     benefits: ["Brinde de Boas Vindas"],
   },
   {

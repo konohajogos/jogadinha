@@ -12,9 +12,9 @@ export function TopBar() {
         <div className="flex flex-col items-center gap-0.5">
           <span className="flex items-center gap-1.5 font-display font-bold" style={{ color: "#ffff00" }}>
             <Flame className="h-4 w-4" />
-            {"1\u00BA Lote \u2013 R$35"}
+            {"2\u00BA Lote \u2013 R$40"}
           </span>
-          <span className="text-xs text-white/60">{"At\u00E9 08/05/26"}</span>
+          <span className="text-xs text-white/60">{"At\u00E9 16/05/26"}</span>
         </div>
         <span className="hidden h-8 w-px bg-white/20 sm:block" aria-hidden="true" />
         <div className="flex flex-col items-center gap-0.5">
@@ -22,7 +22,7 @@ export function TopBar() {
             <Ticket className="h-4 w-4" style={{ color: "#ffff00" }} />
             {"50 primeiras credenciais exclusivas"}
           </span>
-          <span className="text-xs text-white/60">{"At\u00E9 08/05/26"}</span>
+          <span className="text-xs text-white/60">{"At\u00E9 16/05/26"}</span>
         </div>
       </div>
     </div>
