@@ -11,18 +11,18 @@ const ticketLots = [
   },
   {
     name: "2º Lote",
-    status: "Atual",
+    status: "Esgotado",
     until: "até 16/05",
     price: "R$ 40",
-    featured: true,
+    featured: false,
     benefits: ["Brinde de Boas Vindas"],
   },
   {
     name: "3º Lote",
-    status: "Em breve",
+    status: "Atual",
     until: "até 23/05",
     price: "R$ 45",
-    featured: false,
+    featured: true,
     benefits: ["Brinde de Boas Vindas"],
   },
 ]
@@ -81,11 +81,6 @@ export function TicketLotsSection() {
                 {lot.price}
               </div>
 
-              {lot.featured && (
-                <div className="mt-4 rounded-xl bg-white/10 px-4 py-3 text-sm font-semibold text-white/70">
-                  Últimas credenciais personalizadas
-                </div>
-              )}
 
               <ul className="mt-6 space-y-3">
                 {lot.benefits.map((benefit) => {
