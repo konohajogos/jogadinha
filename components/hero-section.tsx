@@ -35,7 +35,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-[#ffff00]/40 bg-[#ffff00]/15 px-4 py-2 text-sm font-bold uppercase tracking-wider" style={{ color: "#ffff00" }}>
             <Sparkles className="h-4 w-4" />
-            {"Segunda Edi\u00E7\u00E3o"}
+            {"Edi\u00E7\u00E3o 14"}
           </div>
 
           {/* Title */}
@@ -76,15 +76,15 @@ export function HeroSection() {
             <div className="flex items-center justify-center gap-4">
               <Flame className="h-7 w-7 shrink-0 text-black" />
               <span className="font-display text-xl font-extrabold whitespace-nowrap text-black sm:text-2xl">
-                {"3\u00BA LOTE"}
+                {"1\u00BA LOTE"}
               </span>
               <span className="mx-1 h-8 w-px shrink-0 bg-black/30" aria-hidden="true" />
               <span className="font-display text-4xl font-extrabold whitespace-nowrap text-black sm:text-5xl">
-                R$ 45,00
+                R$ 35,00
               </span>
             </div>
             <span className="text-sm font-semibold text-black/70">
-              {"At\u00E9 15/08/26"}
+              {"at\u00E9 02/08/26"}
             </span>
           </div>
 
