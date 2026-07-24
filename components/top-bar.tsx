@@ -14,7 +14,7 @@ export function TopBar() {
             <Flame className="h-4 w-4" />
             {"3\u00BA Lote \u2013 R$45"}
           </span>
-          <span className="text-xs text-white/60">{"At\u00E9 23/05/26"}</span>
+          <span className="text-xs text-white/60">{"At\u00E9 15/08/26"}</span>
         </div>
         {/* <span className="hidden h-8 w-px bg-white/20 sm:block" aria-hidden="true" /> */}
         {/* <div className="flex flex-col items-center gap-0.5">

@@ -30,7 +30,7 @@ export function SiteFooter() {
         </div>
 
         <p className="text-xs text-white/40">
-          {"Jogadinha Nerd \u2013 Edi\u00E7\u00E3o Orgulho Nerd \u00A9 2026"}
+          {"Jogadinha Nerd \u2013 Ed. Tesouros do DOFF \u00A9 2026"}
         </p>
       </div>
     </footer>

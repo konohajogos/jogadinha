@@ -53,18 +53,18 @@ export function HeroSection() {
             <div className="flex items-center gap-2 rounded-lg border border-[#ffff00]/30 bg-[#0a1a4a]/80 px-3 py-2.5 sm:px-4 sm:py-3">
               <CalendarDays className="h-5 w-5" style={{ color: "#ffff00" }} />
               <span className="font-display text-sm font-bold text-white sm:text-base">
-                23 de Maio de 2026
+                15 de Agosto de 2026
               </span>
             </div>
             <div className="flex items-center gap-2 rounded-lg border border-[#ffff00]/30 bg-[#0a1a4a]/80 px-3 py-2.5 sm:px-4 sm:py-3">
               <Clock className="h-5 w-5" style={{ color: "#ffff00" }} />
               <span className="font-display text-sm font-bold text-white sm:text-base">
-                {"13h \u00E0s 21h"}
+                {"15h \u00E0s 23h"}
               </span>
             </div>
             <div className="flex items-center gap-2 rounded-lg border border-[#ffff00]/30 bg-[#0a1a4a]/80 px-3 py-2.5 sm:px-4 sm:py-3">
               <MapPin className="h-5 w-5" style={{ color: "#ffff00" }} />
-              <span className="font-display text-sm font-bold text-white sm:text-base">UNEMAT</span>
+              <span className="font-display text-sm font-bold text-white sm:text-base">Grambeer</span>
             </div>
           </div>
 
@@ -84,7 +84,7 @@ export function HeroSection() {
               </span>
             </div>
             <span className="text-sm font-semibold text-black/70">
-              {"At\u00E9 23/05/26"}
+              {"At\u00E9 15/08/26"}
             </span>
           </div>
 
@@ -102,7 +102,7 @@ export function HeroSection() {
           <div className="relative w-72 sm:w-80 lg:w-[450px]">
             <Image
               src="/images/logo-ninja-combined.png"
-              alt="Jogadinha Nerd - Edição Orgulho Nerd"
+              alt="Jogadinha Nerd - Ed. Tesouros do DOFF"
               width={450}
               height={600}
               className="w-full drop-shadow-2xl"
