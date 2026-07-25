@@ -11,8 +11,8 @@ const ticketLots = [
   },
   {
     name: "2º Lote",
-    status: "Esgotado",
-    until: "até 16/05",
+    status: "Em breve",
+    until: "até 09/08",
     price: "R$ 40",
     featured: false,
     benefits: ["Brinde de Boas Vindas"],
