@@ -6,7 +6,7 @@ export function CTAButtons() {
       <div className="flex items-center justify-center gap-2 lg:justify-start">
         <ArrowRight className="h-5 w-5 animate-pulse" style={{ color: "#ffff00" }} />
         <span className="font-display text-base font-bold uppercase tracking-wide text-white sm:text-lg">
-          Garantir meu ingresso agora!
+          {"1\u00BA Lote | R$35,00 at\u00E9 dia 02/08/26"}
         </span>
       </div>
       <div className="flex w-full items-center gap-3">

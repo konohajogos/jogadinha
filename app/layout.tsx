@@ -14,9 +14,9 @@ const _inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Jogadinha Nerd - Edição Orgulho Nerd | 23 de Maio de 2026',
+  title: 'Jogadinha Nerd - Ed. Tesouros do DOFF | 15 de Agosto de 2026',
   description:
-    'A experiência nerd com jogos de tabuleiro mais insana de Rondonópolis! RPG, Yu-Gi-Oh!, Pokémon, Board Games e muito mais. 23/05/2026 na UNEMAT. Garanta seu ingresso!',
+    'A experiência nerd com jogos de tabuleiro mais insana de Rondonópolis! RPG, Yu-Gi-Oh!, Pokémon, Board Games e muito mais. 15/08/2026 no Grambeer. Garanta seu ingresso!',
   icons: {
     icon: [{ url: '/favicon.png', sizes: '512x512', type: 'image/png' }],
   },

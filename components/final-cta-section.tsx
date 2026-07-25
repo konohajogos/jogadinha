@@ -25,15 +25,15 @@ export function FinalCTASection() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <div className="flex items-center gap-2 text-base text-white">
               <CalendarDays className="h-5 w-5" style={{ color: "#ffff00" }} />
-              <span className="font-display font-bold">23/05/2026</span>
+              <span className="font-display font-bold">15/08/2026</span>
             </div>
             <div className="flex items-center gap-2 text-base text-white">
               <Clock className="h-5 w-5" style={{ color: "#ffff00" }} />
-              <span className="font-display font-bold">{"13h \u00E0s 21h"}</span>
+              <span className="font-display font-bold">{"15h \u00E0s 23h"}</span>
             </div>
             <div className="flex items-center gap-2 text-base text-white">
               <MapPin className="h-5 w-5" style={{ color: "#ffff00" }} />
-              <span className="font-display font-bold">UNEMAT</span>
+              <span className="font-display font-bold">Grambeer</span>
             </div>
           </div>
 

@@ -35,7 +35,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-[#ffff00]/40 bg-[#ffff00]/15 px-4 py-2 text-sm font-bold uppercase tracking-wider" style={{ color: "#ffff00" }}>
             <Sparkles className="h-4 w-4" />
-            {"Segunda Edi\u00E7\u00E3o"}
+            {"Edi\u00E7\u00E3o 14"}
           </div>
 
           {/* Title */}
@@ -53,18 +53,18 @@ export function HeroSection() {
             <div className="flex items-center gap-2 rounded-lg border border-[#ffff00]/30 bg-[#0a1a4a]/80 px-3 py-2.5 sm:px-4 sm:py-3">
               <CalendarDays className="h-5 w-5" style={{ color: "#ffff00" }} />
               <span className="font-display text-sm font-bold text-white sm:text-base">
-                23 de Maio de 2026
+                15 de Agosto de 2026
               </span>
             </div>
             <div className="flex items-center gap-2 rounded-lg border border-[#ffff00]/30 bg-[#0a1a4a]/80 px-3 py-2.5 sm:px-4 sm:py-3">
               <Clock className="h-5 w-5" style={{ color: "#ffff00" }} />
               <span className="font-display text-sm font-bold text-white sm:text-base">
-                {"13h \u00E0s 21h"}
+                {"15h \u00E0s 23h"}
               </span>
             </div>
             <div className="flex items-center gap-2 rounded-lg border border-[#ffff00]/30 bg-[#0a1a4a]/80 px-3 py-2.5 sm:px-4 sm:py-3">
               <MapPin className="h-5 w-5" style={{ color: "#ffff00" }} />
-              <span className="font-display text-sm font-bold text-white sm:text-base">UNEMAT</span>
+              <span className="font-display text-sm font-bold text-white sm:text-base">Grambeer</span>
             </div>
           </div>
 
@@ -76,15 +76,15 @@ export function HeroSection() {
             <div className="flex items-center justify-center gap-4">
               <Flame className="h-7 w-7 shrink-0 text-black" />
               <span className="font-display text-xl font-extrabold whitespace-nowrap text-black sm:text-2xl">
-                {"3\u00BA LOTE"}
+                {"1\u00BA lote"}
               </span>
               <span className="mx-1 h-8 w-px shrink-0 bg-black/30" aria-hidden="true" />
               <span className="font-display text-4xl font-extrabold whitespace-nowrap text-black sm:text-5xl">
-                R$ 45,00
+                R$35
               </span>
             </div>
             <span className="text-sm font-semibold text-black/70">
-              {"At\u00E9 23/05/26"}
+              {"at\u00E9 02/08/26"}
             </span>
           </div>
 
@@ -102,7 +102,7 @@ export function HeroSection() {
           <div className="relative w-72 sm:w-80 lg:w-[450px]">
             <Image
               src="/images/logo-ninja-combined.png"
-              alt="Jogadinha Nerd - Edição Orgulho Nerd"
+              alt="Jogadinha Nerd - Ed. Tesouros do DOFF"
               width={450}
               height={600}
               className="w-full drop-shadow-2xl"

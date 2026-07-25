@@ -47,7 +47,7 @@ export function ExclusiveBenefitSection() {
               <div className="flex items-start gap-3 rounded-lg border border-[#ffff00]/20 bg-[#ffff00]/10 p-4 text-left">
                 <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0" style={{ color: "#ffff00" }} />
                 <span className="text-base font-medium text-white">
-                  {"Credencial personalizada exclusiva da edi\u00E7\u00E3o Orgulho Nerd"}
+                  {"Credencial personalizada exclusiva da Ed. Tesouros do DOFF"}
                 </span>
               </div>
               <div className="flex items-start gap-3 rounded-lg border border-[#25D366]/20 bg-[#25D366]/10 p-4 text-left">
