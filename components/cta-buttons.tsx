@@ -1,36 +1,18 @@
-import { Ticket, MessageCircle, ArrowRight } from "lucide-react"
+import { ArrowUpRight, Ticket } from "lucide-react"
+import { event } from "@/lib/event"
 
-export function CTAButtons() {
+export function CTAButtons({ className = "" }: { className?: string }) {
   return (
-    <div className="flex w-full flex-col gap-3">
-      <div className="flex items-center justify-center gap-2 lg:justify-start">
-        <ArrowRight className="h-5 w-5 animate-pulse" style={{ color: "#ffff00" }} />
-        <span className="font-display text-base font-bold uppercase tracking-wide text-white sm:text-lg">
-          Garantir meu ingresso agora!
-        </span>
-      </div>
-      <div className="flex w-full items-center gap-3">
-        <a
-          href="https://www.sympla.com.br/evento/jogadinha-nerd---ed-orgulho-nerd/3407081"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-5 py-4 font-display text-base font-bold text-white transition-all hover:scale-105 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:text-lg"
-          style={{ backgroundColor: "#0097FF" }}
-        >
-          <Ticket className="h-5 w-5 shrink-0 transition-transform group-hover:-rotate-12 sm:h-6 sm:w-6" />
-          Sympla
-        </a>
-        <a
-          href="https://api.whatsapp.com/send/?phone=5566992005065&text=Gostaria+de+adquirir+o+ingresso+da+jogadinha+nerd&type=phone_number&app_absent=0"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-5 py-4 font-display text-base font-bold text-white transition-all hover:scale-105 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:text-lg"
-          style={{ backgroundColor: "#25D366" }}
-        >
-          <MessageCircle className="h-5 w-5 shrink-0 transition-transform group-hover:scale-110 sm:h-6 sm:w-6" />
-          WhatsApp
-        </a>
-      </div>
-    </div>
+    <a
+      href={event.registrationUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex min-h-14 w-full items-center justify-center gap-2 rounded-full bg-[#ff7a1a] px-4 py-4 font-display text-sm font-extrabold uppercase tracking-wide text-[#1b0928] shadow-[0_12px_35px_rgba(255,99,15,0.25)] transition-transform duration-200 hover:-translate-y-1 hover:bg-[#ffad2c] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-[#ffe16c] sm:w-auto sm:gap-3 sm:px-7 sm:text-base ${className}`}
+    >
+      <Ticket className="h-5 w-5" aria-hidden="true" />
+      <span className="sm:hidden">Garantir ingresso</span>
+      <span className="hidden sm:inline">Quero garantir meu ingresso</span>
+      <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+    </a>
   )
 }

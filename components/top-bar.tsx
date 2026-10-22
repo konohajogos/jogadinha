@@ -1,30 +1,19 @@
-"use client"
-
-import { Flame, Ticket } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
+import { event } from "@/lib/event"
 
 export function TopBar() {
   return (
-    <div
-      className="fixed inset-x-0 top-0 z-50 border-b border-white/10 backdrop-blur-md"
-      style={{ backgroundColor: "rgba(12, 20, 118, 0.9)" }}
-    >
-      <div className="mx-auto flex max-w-7xl items-center justify-center gap-4 px-4 py-2 text-sm sm:gap-6 sm:text-base">
-        <div className="flex flex-col items-center gap-0.5">
-          <span className="flex items-center gap-1.5 font-display font-bold" style={{ color: "#ffff00" }}>
-            <Flame className="h-4 w-4" />
-            {"3\u00BA Lote \u2013 R$45"}
-          </span>
-          <span className="text-xs text-white/60">{"At\u00E9 23/05/26"}</span>
-        </div>
-        {/* <span className="hidden h-8 w-px bg-white/20 sm:block" aria-hidden="true" /> */}
-        {/* <div className="flex flex-col items-center gap-0.5">
-          <span className="flex items-center gap-1.5 text-white/80">
-            <Ticket className="h-4 w-4" style={{ color: "#ffff00" }} />
-            {"50 primeiras credenciais exclusivas"}
-          </span>
-          <span className="text-xs text-white/60">{"At\u00E9 23/05/26"}</span>
-        </div> */}
+    <header className="absolute inset-x-0 top-0 z-50 border-b border-white/10 bg-[#12081e]/75 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-5 sm:px-8">
+        <a href="#inicio" className="font-display text-sm font-black uppercase tracking-[0.12em] text-[#fff7e9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffb02e] sm:text-base">
+          <span className="sm:hidden">JN <span className="text-[#ff9b21]">/ Halloween</span></span>
+          <span className="hidden sm:inline">Jogadinha Nerd <span className="text-[#ff9b21]">/ Halloween</span></span>
+        </a>
+        <span className="hidden text-sm font-semibold text-[#fff7e9]/80 md:block">{event.date} · {event.time}</span>
+        <a href={event.registrationUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-full border border-[#ff9b21]/70 px-3 py-2 text-xs font-bold uppercase tracking-wide text-[#fff7e9] transition-colors hover:bg-[#ff9b21] hover:text-[#1b0928] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffe16c] sm:px-5 sm:text-sm">
+          Inscrever-se <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+        </a>
       </div>
-    </div>
+    </header>
   )
 }

@@ -1,61 +1,42 @@
 import Image from "next/image"
-import { Sparkles, Star } from "lucide-react"
 
 export function CosplaySection() {
   return (
-    <section className="relative px-4 py-16 sm:py-20 overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/background-nerd.png"
-          alt=""
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-[#0a1a4a]/70" />
-      </div>
+    <section className="relative isolate overflow-hidden bg-[#13091d] px-4 py-20 sm:py-28">
+      <Image
+        src="/images/halloween-bg-secondary.png"
+        alt=""
+        fill
+        sizes="100vw"
+        className="z-0 object-cover object-center opacity-45"
+      />
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#13091d]/95 via-[#13091d]/80 to-[#13091d]/50" />
 
-      <div className="relative z-10 mx-auto max-w-4xl">
-        <div
-          className="relative overflow-hidden rounded-2xl border-2 border-[#ffff00] p-8 text-center sm:p-12"
-          style={{ backgroundColor: "rgba(10, 26, 74, 0.8)" }}
-        >
-          {/* Decorative stars */}
-          <Star
-            className="absolute top-4 left-4 h-6 w-6 text-[#ffff00]/30"
-            fill="currentColor"
-          />
-          <Star
-            className="absolute bottom-4 right-4 h-8 w-8 text-[#ffff00]/30"
-            fill="currentColor"
-          />
-          <Star
-            className="absolute top-6 right-8 h-4 w-4 text-[#ffff00]/20"
-            fill="currentColor"
-          />
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] md:gap-14">
+        <div>
+          <p className="font-display text-sm font-bold uppercase tracking-[0.22em] text-[#ff9f45]">
+            Entre no clima
+          </p>
+          <h2 className="mt-5 max-w-3xl text-balance font-display text-4xl font-extrabold leading-tight text-[#fff4df] sm:text-5xl lg:text-6xl">
+            Cosplay é bem-vindo!
+          </h2>
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#f8e9d5] sm:text-xl">
+            Vista-se do seu personagem favorito e venha brilhar no Halloween. Teremos um desfile de fantasias com premiação.
+          </p>
+          <p className="mt-5 max-w-2xl text-base font-semibold text-[#ffbd76]">
+            A fantasia é um convite, não uma obrigação. Você pode participar do seu jeito.
+          </p>
+        </div>
 
-          <div className="relative z-10 flex flex-row items-center gap-24 sm:gap-24">
-            <div className="flex flex-col items-center justify-center gap-3">
-              {/* <Sparkles className="h-10 w-10 text-[#ffff00]" /> */}
-              <h2 className="font-display text-3xl font-extrabold uppercase tracking-wide sm:text-4xl lg:text-5xl" style={{ color: "#ffff00" }}>
-                {"Cosplay \u00E9"}
-                <span className="block whitespace-nowrap">bem-vindo!</span>
-              </h2>
-              <p className="max-w-md text-lg text-white/80">
-                Vista-se do seu personagem favorito e venha brilhar no evento
-              </p>
-            </div>
-
-            <div className="relative w-40 sm:w-48 lg:w-56">
-            <Image
-              src="/images/ninja-cosplay.png"
-              alt="Mascote Ninja - Cosplay"
-              width={224}
-              height={280}
-              className="w-full drop-shadow-2xl"
-            />
-            </div>
-          </div>
+        <div className="relative mx-auto aspect-[4/3] w-full max-w-[560px] overflow-hidden rounded-2xl border border-[#f8e9d5]/15 shadow-[0_24px_48px_rgba(0,0,0,0.4)]">
+          <Image
+            src="/images/cosplay.webp"
+            alt="Grupo de participantes com fantasias de personagens e temas de Halloween reunido para uma foto."
+            width={1800}
+            height={1350}
+            sizes="(min-width: 768px) 560px, calc(100vw - 32px)"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
     </section>

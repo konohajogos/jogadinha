@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, Inter } from 'next/font/google'
 import Script from "next/script";
+import { event } from '@/lib/event'
 import './globals.css'
 
 const _spaceGrotesk = Space_Grotesk({
@@ -14,16 +15,16 @@ const _inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Jogadinha Nerd - Edição Orgulho Nerd | 23 de Maio de 2026',
+  title: `${event.name} | ${event.date}`,
   description:
-    'A experiência nerd com jogos de tabuleiro mais insana de Rondonópolis! RPG, Yu-Gi-Oh!, Pokémon, Board Games e muito mais. 23/05/2026 na UNEMAT. Garanta seu ingresso!',
+    `O Halloween de Rondonópolis vai ser diferente: 8 horas de jogos, torneios, desafios e experiências geek. ${event.date}, das ${event.time}, na ${event.location}. Ingresso ${event.price}.`,
   icons: {
-    icon: [{ url: '/favicon.png', sizes: '512x512', type: 'image/png' }],
+    icon: [{ url: '/images/halloween-mascot.png', type: 'image/png' }],
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0a0d1a',
+  themeColor: '#13091f',
   width: 'device-width',
   initialScale: 1,
 }
@@ -34,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className="bg-[#0a1a4a]">
+    <html lang="pt-BR" className="bg-[#13091f]">
       <body className={`${_spaceGrotesk.variable} ${_inter.variable} font-sans antialiased`}>
         <Script
           id="facebook-pixel"

@@ -1,68 +1,40 @@
 import Image from "next/image"
-import { BadgeCheck, Gift, AlertTriangle, Sparkles } from "lucide-react"
+
+const kitItems = ["Credencial personalizada", "Crachá", "Brinde de participação"]
 
 export function ExclusiveBenefitSection() {
   return (
-    <section
-      className="px-4 py-20 sm:py-28"
-      style={{ background: "linear-gradient(180deg, #0c1476, #0a1a4a)" }}
-    >
-      <div className="mx-auto max-w-3xl">
-        <div className="
-          relative overflow-hidden rounded-2xl border border-[#ffff00]/30 bg-[#131517] p-8 sm:p-12">
-          {/* Background glow */}
-          <div
-            className="pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full opacity-30"
-            style={{
-              background:
-                "radial-gradient(circle, hsl(60 100% 50% / 0.6), transparent 70%)",
-            }}
-            aria-hidden="true"
+    <section className="bg-[#1a0c27] px-4 py-20 sm:py-28">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1fr_0.95fr] lg:gap-16">
+        <div>
+          <p className="font-display text-sm font-bold uppercase tracking-[0.22em] text-[#ff9f45]">
+            O que você leva
+          </p>
+          <h2 className="mt-5 max-w-2xl text-balance font-display text-4xl font-extrabold leading-tight text-[#fff4df] sm:text-5xl">
+            Uma lembrança da aventura para levar para casa.
+          </h2>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#f8e9d5]/85">
+            Os primeiros 50 ingressos recebem um kit especial da edição Halloween:
+          </p>
+          <ul className="mt-8 space-y-4 border-l-2 border-[#ff9f45] pl-5 text-lg font-semibold text-[#fff4df]">
+            {kitItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <p className="mt-8 max-w-xl text-base leading-relaxed text-[#f8e9d5]/75">
+            O kit é exclusivo dos primeiros 50 ingressos. Todos os ingressos dão acesso ao evento e às atividades disponíveis, conforme horários, regras e capacidade.
+          </p>
+        </div>
+
+        <div className="relative mx-auto w-full max-w-md">
+          <Image
+            src="/images/halloween-kit.png"
+            alt="Kit Halloween da Jogadinha Nerd com credencial, crachá e brinde"
+            width={1154}
+            height={1363}
+            sizes="(min-width: 1024px) 450px, (min-width: 640px) 420px, 90vw"
+            className="h-auto w-full rounded-2xl shadow-[0_28px_90px_rgba(0,0,0,0.45)]"
           />
-
-          <div className="relative z-10 flex flex-col items-center text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full px-4 py-1.5" style={{ backgroundColor: "rgba(255,255,0,0.15)" }}>
-              <AlertTriangle className="h-4 w-4" style={{ color: "#ffff00" }} />
-              <span className="font-display text-sm font-bold uppercase tracking-wider" style={{ color: "#ffff00" }}>
-                Vagas limitadas
-              </span>
-            </div>
-
-            <h2 className="text-balance font-display text-3xl font-bold text-white sm:text-4xl">
-              {"Benefício para os "}
-              <span style={{ color: "#ffff00" }}>50 primeiros</span>
-            </h2>
-
-            {/* Credential image */}
-            <div className="relative my-8 h-64 w-64 sm:h-80 sm:w-80">
-              <Image
-                src="/images/cordao-broche2.png"
-                alt="Cordão e broche exclusivo Konoha Jogos - Jogadinha Nerd"
-                fill
-                className="object-contain drop-shadow-2xl"
-              />
-            </div>
-
-            <div className="w-full space-y-4">
-              <div className="flex items-start gap-3 rounded-lg border border-[#ffff00]/20 bg-[#ffff00]/10 p-4 text-left">
-                <BadgeCheck className="mt-0.5 h-5 w-5 shrink-0" style={{ color: "#ffff00" }} />
-                <span className="text-base font-medium text-white">
-                  {"Credencial personalizada exclusiva da edi\u00E7\u00E3o Orgulho Nerd"}
-                </span>
-              </div>
-              <div className="flex items-start gap-3 rounded-lg border border-[#25D366]/20 bg-[#25D366]/10 p-4 text-left">
-                <Gift className="mt-0.5 h-5 w-5 shrink-0" style={{ color: "#25D366" }} />
-                <span className="text-base font-medium text-white">
-                  Brinde especial entregue na entrada
-                </span>
-              </div>
-            </div>
-
-            <div className="mt-8 flex items-center gap-2 text-sm text-white/70">
-              <Sparkles className="h-4 w-4" style={{ color: "#ffff00" }} />
-              <span>Garanta seu ingresso antes que os 50 primeiros acabem!</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>

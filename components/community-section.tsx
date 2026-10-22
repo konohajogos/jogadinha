@@ -1,53 +1,30 @@
-import Image from "next/image"
-import { MeepleIcon } from "./game-icons"
+import { event } from "@/lib/event"
+import { CommunityPhotoCarousel } from "@/components/community-photo-carousel"
 
 export function CommunitySection() {
   return (
-    <section className="relative overflow-hidden px-4 py-20 sm:py-28">
-      <Image
-        src="/images/community-background.jpeg"
-        alt=""
-        fill
-        className="object-cover"
-        sizes="100vw"
-        aria-hidden="true"
-      />
-
-      <div className="relative z-10 mx-auto max-w-4xl">
-        <div className="text-center">
-          <MeepleIcon className="mx-auto mb-6 h-12 w-12 text-[#ffff00]/50" />
-
-          <h2 className="text-balance font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            {"Experi\u00EAncia "}
-            <span style={{ color: "#ffff00" }}>Presencial</span>
+    <section className="relative overflow-hidden bg-[#240e30] px-4 py-20 sm:py-28">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:gap-14">
+        <div>
+          <p className="font-display text-sm font-bold uppercase tracking-[0.22em] text-[#ff9f45]">
+            O que você precisa saber
+          </p>
+          <h2 className="mt-5 max-w-2xl text-balance font-display text-4xl font-extrabold leading-tight text-[#fff4df] sm:text-5xl">
+            Experiência presencial. Comunidade de verdade.
           </h2>
-
-          <div className="mt-8 space-y-4 text-xl leading-relaxed text-white/70 sm:text-2xl">
-            <p>
-              {"Mais do que um evento, a Jogadinha Nerd \u00E9 uma "}
-              <span className="font-semibold text-white">comunidade.</span>
-            </p>
-            <p>
-              {"Aqui voc\u00EA n\u00E3o joga sozinho."}
-            </p>
-            <p className="font-display font-bold" style={{ color: "#ffff00" }}>
-              Pois todo nerd tem um lugar na mesa.
-            </p>
-          </div>
-
-          {/* Ninja mascot */}
-          <div className="mt-10 flex justify-center">
-            <div className="relative w-32 sm:w-40">
-              <Image
-                src="/images/ninja-mascot.png"
-                alt="Mascote Ninja Konoha"
-                width={320}
-                height={320}
-                className="w-full drop-shadow-xl"
-              />
-            </div>
-          </div>
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#f8e9d5]/85">
+            Mais do que um evento, a Jogadinha Nerd é uma comunidade. Aqui você não joga sozinho: encontra pessoas, descobre jogos e compartilha a aventura.
+          </p>
+          <p className="mt-6 font-display text-xl font-bold text-[#ffbd76] sm:text-2xl">
+            Todo nerd tem um lugar na mesa.
+          </p>
+          <p className="mt-8 border-t border-[#f8e9d5]/20 pt-6 text-base leading-relaxed text-[#fff4df]">
+            {event.date}, {event.day} · {event.time}<br />
+            <a href={event.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-block underline decoration-[#ff9f45]/70 underline-offset-4 transition-colors hover:text-[#ffbd76] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff9f45]">{event.location}</a>
+          </p>
         </div>
+
+        <CommunityPhotoCarousel />
       </div>
     </section>
   )

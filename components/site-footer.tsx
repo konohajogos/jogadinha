@@ -1,37 +1,16 @@
-import { Instagram, AlertCircle, MapPin } from "lucide-react"
+import { Instagram, MapPin } from "lucide-react"
+import { event } from "@/lib/event"
 
 export function SiteFooter() {
   return (
-    <footer
-      className="border-t border-white/10 px-4 py-10 pb-24 sm:pb-10"
-      style={{ backgroundColor: "#0c1476" }}
-    >
-      <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
-        <a
-          href="https://instagram.com/konohajogosroo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-base font-semibold text-white transition-colors hover:text-[#ffff00]"
-        >
-          <Instagram className="h-5 w-5" />
-          @konohajogosroo
-        </a>
-
-        <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-white/60">
-          <span className="flex items-center gap-1.5">
-            <MapPin className="h-4 w-4" />
-            Evento presencial
-          </span>
-          <span className="h-3 w-px bg-white/20" aria-hidden="true" />
-          <span className="flex items-center gap-1.5">
-            <AlertCircle className="h-4 w-4" />
-            Menores apenas acompanhados
-          </span>
+    <footer className="border-t border-white/10 bg-[#0d0715] px-5 pb-24 pt-10 text-[#fff7e9] sm:px-8 sm:pb-10">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
+        <div>
+          <p className="font-display text-lg font-black">Jogadinha Nerd <span className="text-[#ff9b21]">/ Halloween</span></p>
+          <p className="mt-1 text-xs text-[#fff7e9]/55">© 2026 Konoha Jogos</p>
         </div>
-
-        <p className="text-xs text-white/40">
-          {"Jogadinha Nerd \u2013 Edi\u00E7\u00E3o Orgulho Nerd \u00A9 2026"}
-        </p>
+        <a href={event.mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-[#fff7e9]/75 underline decoration-[#ffad2c]/70 underline-offset-4 transition-colors hover:text-[#ffad2c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffad2c]"><MapPin className="h-4 w-4 text-[#ffad2c]" aria-hidden="true" />{event.location}</a>
+        <a href="https://instagram.com/konohajogosroo" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-[#fff7e9] hover:text-[#ffad2c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffad2c]"><Instagram className="h-5 w-5" aria-hidden="true" />@konohajogosroo</a>
       </div>
     </footer>
   )

@@ -1,60 +1,39 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { event } from "@/lib/event"
 
-const EVENT_DATE = new Date("2026-05-23T13:00:00-04:00").getTime()
+const eventTime = new Date(event.startsAt).getTime()
 
-interface TimeLeft {
-  days: number
-  hours: number
-  minutes: number
-  seconds: number
-}
-
-function calculateTimeLeft(): TimeLeft {
-  const difference = EVENT_DATE - Date.now()
-  if (difference <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 }
-  return {
-    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-    minutes: Math.floor((difference / (1000 * 60)) % 60),
-    seconds: Math.floor((difference / 1000) % 60),
-  }
-}
-
-function TimeBlock({ value, label }: { value: number; label: string }) {
-  return (
-    <div className="flex flex-col items-center">
-      <div
-        className="relative flex h-14 w-14 items-center justify-center rounded-lg border border-[#ffff00]/30 font-display text-xl font-bold sm:h-16 sm:w-16 sm:text-2xl"
-        style={{ backgroundColor: "rgba(255, 255, 0, 0.08)", color: "#ffff00" }}
-      >
-        {String(value).padStart(2, "0")}
-      </div>
-      <span className="mt-1.5 text-[10px] uppercase tracking-widest text-white/50 sm:text-xs">
-        {label}
-      </span>
-    </div>
-  )
+function timeLeft() {
+  const seconds = Math.max(0, Math.floor((eventTime - Date.now()) / 1000))
+  return [
+    Math.floor(seconds / 86400),
+    Math.floor((seconds % 86400) / 3600),
+    Math.floor((seconds % 3600) / 60),
+    seconds % 60,
+  ]
 }
 
 export function CountdownTimer() {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft)
+  const [values, setValues] = useState<number[] | null>(null)
 
   useEffect(() => {
-    const timer = setInterval(() => setTimeLeft(calculateTimeLeft()), 1000)
-    return () => clearInterval(timer)
+    setValues(timeLeft())
+    const timer = window.setInterval(() => setValues(timeLeft()), 1000)
+    return () => window.clearInterval(timer)
   }, [])
 
   return (
-    <div className="flex items-center gap-2 sm:gap-3">
-      <TimeBlock value={timeLeft.days} label="Dias" />
-      <span className="mt-[-1rem] font-display text-xl" style={{ color: "#ffff00" }}>:</span>
-      <TimeBlock value={timeLeft.hours} label="Horas" />
-      <span className="mt-[-1rem] font-display text-xl" style={{ color: "#ffff00" }}>:</span>
-      <TimeBlock value={timeLeft.minutes} label="Min" />
-      <span className="mt-[-1rem] font-display text-xl" style={{ color: "#ffff00" }}>:</span>
-      <TimeBlock value={timeLeft.seconds} label="Seg" />
+    <div className="flex gap-5 sm:gap-8" aria-label="Contagem regressiva para o início do evento">
+      {["dias", "horas", "min", "seg"].map((label, index) => (
+        <div className="flex min-w-10 flex-col items-center" key={label}>
+          <span className="font-display text-2xl font-black tabular-nums text-[#ffb02e] sm:text-3xl" suppressHydrationWarning>
+            {values ? String(values[index]).padStart(2, "0") : "--"}
+          </span>
+          <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#fff7e9]/65">{label}</span>
+        </div>
+      ))}
     </div>
   )
 }

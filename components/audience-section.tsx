@@ -1,43 +1,41 @@
-import { Check } from "lucide-react"
-
 const audiences = [
-  "Para quem ama jogos de tabuleiro",
-  "Para quem joga Yu-Gi-Oh!",
-  "Para colecionadores de Pokémon",
-  "Para fãs de RPG",
-  "Para quem quer conhecer pessoas com os mesmos interesses",
-  "Para quem quer viver um sábado diferente",
+  "Quem ama jogos de tabuleiro e quer conhecer títulos novos",
+  "Quem joga Pokémon TCG ou Yu-Gi-Oh! e quer encontrar outros jogadores",
+  "Quem gosta de RPG, fantasia e aventuras",
+  "Quem adora competir, testar estratégias e enfrentar desafios",
+  "Quem curte Halloween e quer viver um programa diferente",
+  "Quem quer conhecer pessoas com interesses em comum",
+  "Quem já participa da comunidade Konoha e quer reencontrar a galera",
 ]
 
 export function AudienceSection() {
   return (
-    <section
-      className="px-4 py-20 sm:py-28"
-      style={{ backgroundColor: "#0c1476" }}
-    >
-      <div className="mx-auto max-w-3xl">
-        <div className="mb-12 text-center">
-          <span className="font-display text-sm font-semibold uppercase tracking-widest" style={{ color: "#ffff00" }}>
-            {"P\u00FAblico"}
-          </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            {"Para quem \u00E9 o evento"}
-          </h2>
-        </div>
+    <section className="bg-[#100719] px-4 py-20 sm:py-28">
+      <div className="mx-auto max-w-6xl">
+        <p className="font-display text-sm font-bold uppercase tracking-[0.22em] text-[#ff9f45]">
+          Seu lugar na mesa
+        </p>
+        <h2 className="mt-5 max-w-3xl text-balance font-display text-4xl font-extrabold leading-tight text-[#fff4df] sm:text-5xl">
+          Para quem é a Jogadinha Nerd?
+        </h2>
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[#f8e9d5]/85">
+          Se você se identifica com alguma dessas opções, tem lugar para você na mesa.
+        </p>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          {audiences.map((item) => (
-            <div
-              key={item}
-              className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/5 p-4 transition-colors hover:border-[#ffff00]/30"
-            >
-              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full" style={{ backgroundColor: "rgba(255,255,0,0.15)" }}>
-                <Check className="h-4 w-4" style={{ color: "#ffff00" }} />
-              </div>
-              <span className="text-base text-white">{item}</span>
-            </div>
+        <ul className="mt-10 grid gap-x-12 sm:grid-cols-2">
+          {audiences.map((item, index) => (
+            <li key={item} className="flex gap-4 border-t border-[#f8e9d5]/20 py-5">
+              <span className="font-display text-sm font-bold text-[#ff9f45]" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span className="text-base leading-relaxed text-[#fff4df] sm:text-lg">{item}</span>
+            </li>
           ))}
-        </div>
+        </ul>
+
+        <p className="mt-8 max-w-3xl text-lg font-semibold leading-relaxed text-[#ffbd76]">
+          Você não precisa conhecer todos os jogos, ser experiente ou chegar acompanhado. Só precisa ter vontade de participar. O resto a gente descobre junto!
+        </p>
       </div>
     </section>
   )

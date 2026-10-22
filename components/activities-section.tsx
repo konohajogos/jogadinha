@@ -1,10 +1,10 @@
 import {
-  Swords,
-  Trophy,
-  Crown,
+  Gamepad2,
+  Ghost,
   Gift,
   Handshake,
-  Gamepad2,
+  Swords,
+  Trophy,
   type LucideIcon,
 } from "lucide-react"
 import { PokemonIcon, YuGiOhIcon } from "./game-icons"
@@ -13,109 +13,78 @@ interface Activity {
   icon: LucideIcon | React.FC<{ className?: string }>
   title: string
   description: string
-  color: string
-  borderColor: string
-  bgColor: string
 }
 
 const activities: Activity[] = [
   {
-    icon: Swords,
-    title: "RPG",
-    description: "Mesas conduzidas por mestres experientes",
-    color: "text-[#ffff00]",
-    borderColor: "border-[#ffff00]/30",
-    bgColor: "bg-[#ffff00]/10",
-  },
-  {
-    icon: YuGiOhIcon,
-    title: "Torneio de Yu-Gi-Oh!",
-    description: "Prepare seu deck e venha competir em mesa",
-    color: "text-[#0097FF]",
-    borderColor: "border-[#0097FF]/30",
-    bgColor: "bg-[#0097FF]/10",
-  },
-  {
     icon: Gamepad2,
-    title: "Missões e Dinâmicas",
-    description: "Desafios do universo Nerd",
-    color: "text-[#25D366]",
-    borderColor: "border-[#25D366]/30",
-    bgColor: "bg-[#25D366]/10",
+    title: "Jogos de tabuleiro",
+    description: "Explore diferentes jogos, sente-se à mesa e descubra seu próximo favorito.",
   },
   {
     icon: PokemonIcon,
-    title: "Troca de Cartas Pokémon",
-    description: "Espaço dedicado para troca e interação",
-    color: "text-[#ffff00]",
-    borderColor: "border-[#ffff00]/30",
-    bgColor: "bg-[#ffff00]/10",
+    title: "Torneio de Pokémon TCG",
+    description: "Atividade recreativa e independente para a comunidade, sem caráter oficial da Liga Pokémon.",
   },
   {
-    icon: Trophy,
-    title: "Torneio de Board Games",
-    description: "Competições com premiação",
-    color: "text-[#0097FF]",
-    borderColor: "border-[#0097FF]/30",
-    bgColor: "bg-[#0097FF]/10",
+    icon: YuGiOhIcon,
+    title: "Yu-Gi-Oh!",
+    description: "Prepare seu deck, encontre outros duelistas e aproveite as partidas do evento.",
   },
   {
-    icon: Crown,
-    title: "Torneio dos Campeões",
-    description: "Campeões das mesas se enfrentam em uma rodada final",
-    color: "text-[#25D366]",
-    borderColor: "border-[#25D366]/30",
-    bgColor: "bg-[#25D366]/10",
+    icon: Swords,
+    title: "RPG",
+    description: "Entre em uma aventura de interpretação, imaginação e decisões.",
+  },
+  {
+    icon: Ghost,
+    title: "Desafios temáticos",
+    description: "Entre no clima de Halloween com missões, surpresas e desafios especiais.",
   },
   {
     icon: Gift,
-    title: "Sorteios",
-    description: "Prêmios durante todo o evento",
-    color: "text-[#ffff00]",
-    borderColor: "border-[#ffff00]/30",
-    bgColor: "bg-[#ffff00]/10",
+    title: "Doces ou Travessuras",
+    description: "Uma recompensa ou um desafio? Só participando para descobrir.",
+  },
+  {
+    icon: Trophy,
+    title: "Torneios e premiações",
+    description: "Teste suas habilidades, dispute partidas e concorra a lembranças especiais.",
   },
   {
     icon: Handshake,
-    title: "Parceiros Especiais",
-    description: "Participação de parceiros convidados",
-    color: "text-[#0097FF]",
-    borderColor: "border-[#0097FF]/30",
-    bgColor: "bg-[#0097FF]/10",
+    title: "Parceiros e comunidade geek",
+    description: "Conheça os parceiros presentes e as novidades preparadas pela comunidade.",
   },
 ]
 
 export function ActivitiesSection() {
   return (
-    <section
-      className="relative px-4 py-20 sm:py-28"
-      style={{ backgroundColor: "#0c1476" }}
-    >
+    <section className="bg-[#1a0d27] px-5 py-24 text-[#fff7e8] sm:px-8 sm:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12 text-center">
-          <span className="font-display text-sm font-semibold uppercase tracking-widest" style={{ color: "#ffff00" }}>
-            {"Programa\u00E7\u00E3o"}
+        <div className="max-w-3xl">
+          <span className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-[#ffb438]">
+            A programação
           </span>
-          <h2 className="mt-3 text-balance font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-            {"O que voc\u00EA vai encontrar"}
+          <h2 className="mt-4 text-balance font-display text-4xl font-bold sm:text-5xl lg:text-6xl">
+            Escolha seu desafio
           </h2>
+          <p className="mt-5 text-lg leading-relaxed text-[#fff7e8]/75">
+            O que espera por você nesta noite de Halloween? Os torneios de Pokémon TCG e Yu-Gi-Oh! estão inclusos no ingresso.
+          </p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {activities.map((activity) => (
-            <div
-              key={activity.title}
-              className={`group relative overflow-hidden rounded-xl border ${activity.borderColor} bg-white/5 p-6 transition-all hover:scale-[1.02] hover:border-opacity-60`}
-            >
-              <div className={`mb-4 inline-flex rounded-lg p-2.5 ${activity.bgColor}`}>
-                <activity.icon className={`h-6 w-6 ${activity.color}`} />
+        <div className="mt-12 grid gap-x-12 sm:grid-cols-2 lg:gap-x-20">
+          {activities.map((activity, index) => (
+            <div key={activity.title} className="group flex gap-5 border-t border-[#fff7e8]/20 py-6 sm:py-8">
+              <span className="pt-1 font-display text-sm font-semibold text-[#ff7a2f]" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div>
+                <activity.icon className="mb-4 h-7 w-7 text-[#ffb438] transition-transform duration-200 group-hover:-translate-y-1" />
+                <h3 className="font-display text-xl font-bold sm:text-2xl">{activity.title}</h3>
+                <p className="mt-2 max-w-md text-base leading-relaxed text-[#fff7e8]/70">{activity.description}</p>
               </div>
-              <h3 className="font-display text-lg font-bold text-white">
-                {activity.title}
-              </h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-white/60">
-                {activity.description}
-              </p>
             </div>
           ))}
         </div>
