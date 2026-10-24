@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { ActivitiesSection } from "@/components/activities-section"
 import { CosplaySection } from "@/components/cosplay-section"
 import { ExclusiveBenefitSection } from "@/components/exclusive-benefit-section"
+import { PizzaRodizioSection } from "@/components/pizza-rodizio-section"
 import { AudienceSection } from "@/components/audience-section"
 import { CommunitySection } from "@/components/community-section"
 import { FAQSection } from "@/components/faq-section"
@@ -22,6 +23,7 @@ export default function Page() {
         <ActivitiesSection />
         <CosplaySection />
         <ExclusiveBenefitSection />
+        <PizzaRodizioSection />
         <AudienceSection />
         <CommunitySection />
         <FAQSection />
